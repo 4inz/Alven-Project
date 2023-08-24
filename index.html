@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+   <style>
+     .Nav .Nav-bg .Nav-Img {
+       min-height: 200vh;
+       display: flex;
+       align-items: center;
+       background-image: url('Image/galaxy.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;0 
+       opacity: 10;
+     }
+     
+     
+     .Nav .Nav-bg h2{
+       color: #ffffff;
+       z-index: 10%;
+       font-style: italic;
+       margin: 50px;
+       margin-top: -40%;
+       outline-color: #ffffff;
+       outline-width: 5px;
+       font-weight: 1000;
+       position : absolute;
+       margin-left : 20rem;
+       
+     }
+      body {
+        background-color:#000000;
+      }
+      .Nav-Img p{
+        color : #ffffff;
+        font-weight: 700;
+        
+      }
+      Nav-Img p{
+        padding:30% ;
+        position : absolute;
+        
+      }
+      button {
+        margin-left: 50%;
+        width: 10rem;
+        background-color: #7de3f7a0;
+        border: 2px solid #a0ecfe70;
+        font-size: 15px;
+        color: #ffff;
+        font-weight: 800;
+        
+       
+      }
+       button:hover {
+         color: #85c0ffd6;
+         background-color: #ffffffcc;
+         border-bottom :#ffffffcc ;
+         
+         
+         transition: 1s;
+         
+       }
+       .Nav-Img h6{
+         Color: #e4e900cc;
+         font-size: 900;
+         font-weight: 900;
+         margin-top: 40%;
+         margin-right: 50%;
+       }
+       .Nav-Line {
+border-bottom: 2px solid #1c22ffcc;
+       }
+       .Nav-Line h3{
+         position: absolute;
+        
+       }
+       .button {
+       transition :background-color 0.9s ease;
+       display : inline-block;
+       border :none;
+       position : relative;
+       }
+   </style>
+    <div class="Nav">
+      
+     
+      <div class="Nav-bg">
+        
+        <div class="Nav-Img">
+        <h2>
+          What are astronomy ? 
+        </h2>
+        <br>
+        <br>
+        <p>Astronomy is the scientific study of celestial objects such as stars, planets, galaxies, and the universe as a whole. It involves observing, analyzing, and understanding the properties, movements, and interactions of these objects using telescopes and various other instruments. </p>
+        <br>
+        <h6>Stay Strong And Always Pray
+        We will Support You From behind
+          
+        </h6>
+        </div>
+
+      </div>
+      <div class="button">
+       <button id="btn" class="button
+       " onclick="changeText()" >More about us</button>
+       
+      </div <div class="Nav-Line">
+       
+         <button id="Tni" onclick="changeText">What</button>
+       
+       
+      </div>
+    </div>
+
+</body>
+</html>
+<script>
+function changeText() {
+  var button = document.getElementById("Tni");
+  if (button.innerHTML === "What") {
+    button.innerHTML = "Bruhh";
+    
+  }
+}
+
+function changeText() {
+  var button = document.getElementById("btn");
+  if (button.innerHTML === "More about us") {
+    button.innerHTML = "We Have No Enemies";
+  } 
+}
+
+  const btn = document.getElementById("btn");
+  let sound = new Audio();
+  sound.src = 'Voice/Voice-1.mp3';
+  
+  const Tni = document.getElementById("Tni");
+  let Gay = new Audio();
+  Gay.src = 'Voice/Rick.mp3';
+  
+  btn.addEventListener("click", function () { sound.play();
+  
+  }) 
+  Tni.addEventListener("click", function () {
+  Gay.play();
+  
+  }) 
+</script>
